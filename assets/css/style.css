@@ -301,6 +301,26 @@ section {
       padding: 15px 0;
       font-size: 16px;
   }
+
+ /*CSS GRID*/
+.service-grid-container {
+    display: grid;
+    align-items: start | end | center | stretch;  
+} 
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    padding: 1em;
+    color: black;
+}
+.box1 {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+  }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
@@ -409,3 +429,5 @@ section {
         order: 3;
     }
   }
+
+
